@@ -5,9 +5,10 @@ import ProjectsWindow from '../../windows/ProjectsWindow'
 import ReadsWindow from '../../windows/ReadsWindow'
 import BlogWindow from '../../windows/BlogWindow'
 import ContactWindow from '../../windows/ContactWindow'
+import ResearchWindow from '../../windows/ResearchWindow'
 import './Window.css'
 
-type Section = 'about' | 'experience' | 'projects' | 'reads' | 'blog' | 'contact'
+type Section = 'about' | 'experience' | 'projects' | 'reads' | 'blog' | 'contact' | 'research'
 
 interface WindowProps {
   activeSection: Section
@@ -18,6 +19,7 @@ interface WindowProps {
 const tabs: { id: Section; label: string }[] = [
   { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
+  { id: 'research', label: 'Research' },
   { id: 'projects', label: 'Projects' },
   { id: 'reads', label: 'Reads' },
   { id: 'blog', label: 'Blog' },
@@ -33,6 +35,8 @@ export default function Window({ activeSection, setActiveSection, onClose }: Win
         return <AboutWindow />
       case 'experience':
         return <ExperienceWindow />
+      case 'research':
+        return <ResearchWindow />
       case 'projects':
         return <ProjectsWindow />
       case 'reads':

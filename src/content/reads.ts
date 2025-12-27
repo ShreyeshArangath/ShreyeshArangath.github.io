@@ -8,18 +8,6 @@ export interface ReadItem {
 export const reads: ReadItem[] = [
   // Distributed Systems / Data
   {
-    title: 'Designing Data-Intensive Applications',
-    author: 'Martin Kleppmann',
-    note: 'Essential reading for anyone building distributed systems at scale',
-    category: 'Distributed Systems',
-  },
-  {
-    title: 'Database Internals',
-    author: 'Alex Petrov',
-    note: 'Deep dive into storage engines and distributed data systems',
-    category: 'Distributed Systems',
-  },
-  {
     title: 'The Google File System',
     author: 'Ghemawat, Gobioff, Leung',
     note: 'Foundational paper on distributed storage',
@@ -31,44 +19,35 @@ export const reads: ReadItem[] = [
     note: 'The paper that sparked the big data revolution',
     category: 'Distributed Systems',
   },
-
-  // Engineering Craft
   {
-    title: 'A Philosophy of Software Design',
-    author: 'John Ousterhout',
-    note: 'Practical wisdom on managing complexity in software',
-    category: 'Engineering Craft',
+    title: 'Designing Data-Intensive Applications',
+    author: 'Martin Kleppmann',
+    note: 'OFC. Essential reading for anyone building distributed systems at scale',
+    category: 'Distributed Systems',
   },
   {
-    title: 'The Pragmatic Programmer',
-    author: 'Hunt & Thomas',
-    note: 'Timeless advice for building better software',
-    category: 'Engineering Craft',
+    title: 'Database Internals',
+    author: 'Alex Petrov',
+    note: 'Deep dive into storage engines and distributed data systems',
+    category: 'Distributed Systems',
   },
-  {
-    title: 'Staff Engineer',
-    author: 'Will Larson',
-    note: 'Navigating the path beyond senior IC roles',
-    category: 'Engineering Craft',
-  },
-
-  // Thinking / Classics
-  {
-    title: 'Thinking in Systems',
-    author: 'Donella H. Meadows',
-    note: 'Understanding leverage points and feedback loops',
+   // Thinking / Classics
+   {
+    title: 'Essentialism: The Disciplined Pursuit of Less',
+    author: 'Greg McKeown',
+    note: 'A framework for focusing on what truly matters and eliminating the non-essential',
     category: 'Thinking',
   },
   {
-    title: 'The Mythical Man-Month',
-    author: 'Frederick P. Brooks Jr.',
-    note: 'Classic lessons on software project management',
+    title: 'Zero to One',
+    author: 'Peter Thiel',
+    note: 'Contrarian thinking on startups, innovation, and creating new value',
     category: 'Thinking',
   },
   {
-    title: 'How to Solve It',
-    author: 'George Pólya',
-    note: 'Timeless problem-solving heuristics',
+    title: 'Meditations',
+    author: 'Marcus Aurelius',
+    note: 'Stoic reflections on discipline, impermanence, and inner control',
     category: 'Thinking',
   },
 ]

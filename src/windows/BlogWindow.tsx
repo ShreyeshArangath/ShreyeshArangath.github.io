@@ -92,7 +92,7 @@ export default function BlogWindow() {
       <div className="blog-intro">
         <h2>Blog</h2>
         <p>
-          Thoughts on distributed systems, data infrastructure, and building software that scales.
+          🚧 WIP
         </p>
       </div>
 

@@ -3,7 +3,7 @@ import './ContactWindow.css'
 
 export default function ContactWindow() {
   const [copied, setCopied] = useState(false)
-  const email = 'shreyesh@example.com'
+  const email = 'shreyesh.aragnath@gmail.com'
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email)
@@ -55,23 +55,15 @@ export default function ContactWindow() {
           <div className="contact-details">
             <h3>LinkedIn</h3>
             <a
-              href="https://linkedin.com/in/shreyesharangath"
+              href="https://linkedin.com/in/shreyesh"
               className="contact-link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              linkedin.com/in/shreyesharangath
+              linkedin.com/in/shreyesh
             </a>
           </div>
         </div>
-      </div>
-
-      <div className="contact-note">
-        <p>
-          <strong>Note:</strong> Please update the email and social links in{' '}
-          <code>src/windows/ContactWindow.tsx</code> and{' '}
-          <code>src/windows/AboutWindow.tsx</code> with your actual contact information.
-        </p>
       </div>
     </div>
   )
