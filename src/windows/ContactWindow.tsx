@@ -3,7 +3,7 @@ import './ContactWindow.css'
 
 export default function ContactWindow() {
   const [copied, setCopied] = useState(false)
-  const email = 'shreyesh.aragnath@gmail.com'
+  const email = 'shreyesh.arangath@gmail.com'
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email)
