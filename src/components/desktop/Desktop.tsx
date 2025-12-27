@@ -6,7 +6,7 @@ import Dock from './Dock'
 import CommandPalette from './CommandPalette'
 import './Desktop.css'
 
-type Section = 'about' | 'experience' | 'projects' | 'reads' | 'blog' | 'contact'
+type Section = 'about' | 'experience' | 'research' | 'projects' | 'reads' | 'blog' | 'contact'
 
 interface DesktopProps {
   activeSection: Section
