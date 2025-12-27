@@ -1,0 +1,47 @@
+.topbar {
+  height: 28px;
+  background: var(--topbar-bg);
+  border-bottom: 2px solid var(--border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-size: 13px;
+  user-select: none;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.topbar-button {
+  background: var(--topbar-bg);
+  border: 1px outset var(--border-light);
+  padding: 2px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.topbar-button:hover {
+  background: #d0d0d0;
+}
+
+.topbar-button:active {
+  border-style: inset;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-lang,
+.topbar-time {
+  padding: 2px 8px;
+  background: var(--topbar-bg);
+  border: 1px inset var(--border-dark);
+}

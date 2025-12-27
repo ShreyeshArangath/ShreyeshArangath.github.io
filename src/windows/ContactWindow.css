@@ -1,0 +1,127 @@
+.contact-window {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-intro {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #e0e0e0;
+  text-align: center;
+}
+
+.contact-intro h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.contact-intro p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+.contact-item:hover {
+  border-color: var(--window-title-bar);
+}
+
+.contact-icon {
+  font-size: 32px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.contact-link {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--window-title-bar);
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-copy {
+  padding: 6px 12px;
+  background: var(--topbar-bg);
+  border: 2px outset var(--border-light);
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.contact-copy:hover {
+  background: #d0d0d0;
+}
+
+.contact-copy:active {
+  border-style: inset;
+}
+
+.contact-note {
+  padding: 16px;
+  background: #fff8dc;
+  border-left: 4px solid var(--window-title-bar);
+  border-radius: 4px;
+}
+
+.contact-note p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.contact-note code {
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .contact-item {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .contact-icon {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,105 @@
+.experience-window {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-intro {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.experience-intro h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.experience-intro p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.experience-item {
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 4px solid var(--window-title-bar);
+  border-radius: 4px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.experience-company {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.experience-role {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.experience-period {
+  font-size: 14px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.experience-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-highlights li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.experience-highlights li::before {
+  content: '▸';
+  position: absolute;
+  left: 8px;
+  color: var(--window-title-bar);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-period {
+    white-space: normal;
+  }
+
+  .experience-company {
+    font-size: 18px;
+  }
+
+  .experience-role {
+    font-size: 15px;
+  }
+}
